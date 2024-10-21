@@ -1,6 +1,6 @@
 public class Product{
 	  
-	  String productname;
+	  String product_name;
 	  String product_brand;
 	  int product_id;
 	  int total_no_products;
@@ -13,7 +13,7 @@ public class Product{
 
 	  public Product(String productname,String product_brand,int product_id,int total_no_products)
 	  {
-         this.productname = productname;
+         this.product_name = product_name;
          this.product_brand = product_brand;
          this.product_id = product_id;
          this.total_no_products = total_no_products;
@@ -21,8 +21,8 @@ public class Product{
 
 	  
 
-	  public void displayProductDetails() { // Changed to non-static
-        System.out.println("product name: " + productname);
+	  public void displayDetails() { 
+        System.out.println("product name: " + product_name);
         System.out.println("product brand: " + product_brand);
         System.out.println("product id: " + product_id);
         System.out.println("total_no_products: " + total_no_products);

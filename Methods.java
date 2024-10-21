@@ -1,12 +1,3 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
-
-/**
- *
- * @author thash
- */
 
     
     
@@ -29,16 +20,16 @@
 
 	public static void area(){
 
-	int length = 4;
-	int width = 2;
+	int length = 8;
+	int width = 12;
 	int areaOfRect = length * width;
 	System.out.println(areaOfRect);
 	}
 
 	public static void substract(){
 
-		int numOne=10;
-		int numTwo=4;
+		int numOne=67;
+		int numTwo=10;
 		int substractOfNum=numOne-numTwo;
 		System.out.println(substractOfNum);
 	}
