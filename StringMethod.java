@@ -72,22 +72,24 @@ public class StringMethod{
 
 
 
-		System.out.println(".............finding 2nd largest.........................");
+		System.out.println(".............finding 2nd smallest.........................");
 		int[] even = {6,23,34,21,12,80,98,87,69,99};
 		
 		int n = even.length;
-		int largeValue = 0;
-		int secondLargest = 0;
+        int smallestValue = Integer.MAX_VALUE;
+        int secondSmallest = Integer.MAX_VALUE;
 
-		for (int i = 0 ; i < n ; i++ ) {
-			if(even[i] > largeValue){
-				secondLargest = largeValue;
-				largeValue = even[i];
-			}
-		}
-		System.out.println(secondLargest);
-	}
+        for (int i = 0; i < n; i++) {
+            if (even[i] < smallestValue) {
+                secondSmallest = smallestValue;
+                smallestValue = even[i];
+            } else if (even[i] < secondSmallest && even[i] != smallestValue) {
+                secondSmallest = even[i];
+            }
+        }
 
-	}
+        System.out.println(secondSmallest);
+    }
+}
 
 	
