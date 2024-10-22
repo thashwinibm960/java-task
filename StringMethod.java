@@ -56,8 +56,17 @@ public class StringMethod{
 		String value="";
 		for (int i = charArray.length-1;i>=0  ; i-- ) {
 			value =value + charArray[i];
+
 			}
 		System.out.println(value);
+		if (value.equals(palindrome)){
+				System.out.println(" is palindrome");
+
+			}
+			else
+			{
+				System.out.println(" not a palindrome");
+			}
 
 
 
